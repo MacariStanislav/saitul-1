@@ -1,0 +1,249 @@
+body {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 18px;
+  color: #000;
+  min-width: 320px;
+  /*pentru a adapta saitul pentru alte obiecte tipa telefoane compuri planshet i nu da ca elementele sa fie strinse mai putin de 320 de px*/
+  overflow-x: hidden;
+  /*cind fac pagina mai mica elementele sa nu iasa din conteiner*/
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  /*panelea de sus pentru sait*/
+  width: 100%;
+  height: 90px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+  display: flex;
+  justify-content: space-between;
+  /*primu element e in urma ultimul la sfirsit iar altele se pun intre ele intrun sir*/
+  background: #fff;
+  position: relative;
+  z-index: 1000;
+  /*elementul va fi deasupra elementelor cu z-index mai mic(aici nu trebuie) */
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%
+}
+
+.navbar-menu {
+  list-style-type: none;
+  /*nu vor fi puncte or marcari la elemente*/
+  padding-right: 200px;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  /* rastaiania intre elemente */
+}
+
+.navbar-menu li a {
+  display: inline-block;
+  color: #000;
+  opacity: 0.6;
+  /*prazracinii face*/
+  text-decoration: none;
+  padding: 20px;
+  transition: all .09s ease-in-out;
+}
+
+.navbar-menu li a:hover {
+  opacity: 1;
+  /*il face din nou vizibil polnastiu*/
+
+}
+
+.navbar-wrap {
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+.navbar-brand {
+  padding-left: 40px;
+  font-weight: 800;
+  /*face textul gros*/
+  font-size: 40px;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-brand:hover {
+  color: coral;
+}
+
+.navbar-menu-info {
+  list-style-type: none;
+  /*nu vor fi puncte or marcari la elemente*/
+  padding-right: 16px;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu-info li a {
+  display: inline-block;
+  color: #000;
+  opacity: 0.6;
+  text-decoration: none;
+  padding: 20px;
+  transition: all .09s ease-in-out;
+}
+
+.navbar-menu-info li a:hover {
+  opacity: 1;
+}
+
+.callback {
+  margin-left: 30px;
+  padding: 20px 40px;
+
+  background-color: coral;
+  border-radius: 100px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 10px 10px rgba(255, 127, 80, .2);
+  transition: all .1s ease-out;
+}
+
+.callback:hover {
+  transform: scale(1.04);
+  box-shadow: 0 9px 9px rgba(255, 127, 80, .5);
+}
+
+.text-services-dizainer {
+  padding-left: 138px;
+  padding-top: 30px;
+  font-size: 40px;
+
+
+
+}
+
+.text-services-dizainer-1 {
+  font-size: small;
+  opacity: 0.5;
+  padding-left: 140px;
+  padding-top: 30px;
+  margin-bottom: 2%;
+}
+
+.text-services-dizainer-2 {
+  padding-left: 7%;
+  font-weight: normal;
+  display: flex;
+  width: 70%;
+
+
+
+}
+
+.images-services-dizainer {
+
+  height: auto;
+  border: 2px solid rgb(213, 213, 213);
+
+  padding: 10px;
+  margin-top: -40px;
+  position: relative;
+
+
+
+}
+
+.image-container {
+  position: relative;
+  display: flexbox;
+  margin-left: 20px;
+  margin-top: -20px;
+
+}
+
+.image-container img {
+  display: flexbox;
+
+  margin-left: 100px;
+
+
+}
+
+.novbar-home {
+  display: flex;
+  color: #000000;
+  opacity: 0.6;
+  text-decoration: none;
+  padding-right: 0px;
+  transition: all .09s ease-in-out;
+
+}
+
+.novbar-home:hover {
+  opacity: 1;
+}
+
+.navbar-telefon {
+  /*panelea de sus pentru sait*/
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 4px 100px rgba(0, 0, 0, .1);
+  display: flex;
+  justify-content: space-between;
+  /*primu element e in urma ultimul la sfirsit iar altele se pun intre ele intrun sir*/
+  background: #fff;
+  position: relative;
+  z-index: 1000;
+  /*elementul va fi deasupra elementelor cu z-index mai mic(aici nu trebuie) */
+
+
+}
+
+.navbar-telefon .container-telefon {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 70px;
+}
+
+.navbar-wrap-telefon {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 30px;
+
+}
+
+.navbar-brand-telefon {
+  font-weight: 300;
+  /*face textul gros*/
+  font-size: 25px;
+  /*face razmer texta in px care ii pun */
+  color: #000;
+  position: relative;
+  top: 40px;
+  margin-left: 40px;
+}
+
+.navbar-menu-info-telefon {
+  display: flex;
+  bottom: 30px;
+  position: relative;
+  margin-left: 130px;
+  list-style-type: none;
+}
+
+.navbar-menu-info-telefon li a {
+
+  margin-left: 50px;
+  display: flex;
+  color: #000;
+  position: relative;
+  bottom: 10px;
+}

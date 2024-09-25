@@ -1,0 +1,762 @@
+body {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 18px;
+  color: #000;
+  min-width: 320px;
+  /*pentru a adapta saitul pentru alte obiecte tipa telefoane compuri planshet i nu da ca elementele sa fie strinse mai putin de 320 de px*/
+  overflow-x: hidden;
+  /*cind fac pagina mai mica elementele sa nu iasa din conteiner*/
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  /*panelea de sus pentru sait*/
+  width: 100%;
+  height: 90px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+  display: flex;
+  justify-content: space-between;
+  /*primu element e in urma ultimul la sfirsit iar altele se pun intre ele intrun sir*/
+  background: #fff;
+  position: relative;
+  z-index: 1000;
+  /*elementul va fi deasupra elementelor cu z-index mai mic(aici nu trebuie) */
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%
+}
+
+.navbar-menu {
+  list-style-type: none;
+  /*nu vor fi puncte or marcari la elemente*/
+  padding-right: 200px;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  /* rastaiania intre elemente */
+}
+
+
+
+.navbar-menu li a {
+  display: inline-block;
+  color: #000;
+  opacity: 0.6;
+  /*prazracinii face*/
+  text-decoration: none;
+  padding: 20px;
+  transition: all .09s ease-in-out;
+}
+
+.navbar-menu li a:hover {
+  opacity: 1;
+  /*il face din nou vizibil polnastiu*/
+
+}
+
+.navbar-telefon-index {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, .1);
+  display: flex;
+  justify-content: space-between;
+  /*primu element e in urma ultimul la sfirsit iar altele se pun intre ele intrun sir*/
+  background: #fff;
+  position: relative;
+  z-index: 1000;
+  /*elementul va fi deasupra elementelor cu z-index mai mic(aici nu trebuie) */
+
+}
+
+.navbar-telefon-index .container-telefon-index {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-telefon {
+  /*panelea de sus pentru sait*/
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 4px 100px rgba(0, 0, 0, .1);
+  display: flex;
+  justify-content: space-between;
+  /*primu element e in urma ultimul la sfirsit iar altele se pun intre ele intrun sir*/
+  background: #fff;
+  position: relative;
+  z-index: 1000;
+  /*elementul va fi deasupra elementelor cu z-index mai mic(aici nu trebuie) */
+
+
+}
+
+.navbar-telefon .container-telefon {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 70px;
+}
+
+.navbar-wrap-telefon {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 30px;
+
+}
+
+.navbar-brand-telefon {
+  font-weight: 300;
+  /*face textul gros*/
+  font-size: 25px;
+  /*face razmer texta in px care ii pun */
+  color: #000;
+  position: relative;
+  top: 40px;
+  margin-left: 40px;
+}
+
+.navbar-menu-info-telefon {
+  display: flex;
+  bottom: 30px;
+  position: relative;
+  margin-left: 130px;
+  list-style-type: none;
+}
+
+.navbar-menu-info-telefon li a {
+
+  margin-left: 50px;
+  display: flex;
+  color: #000;
+  position: relative;
+  bottom: 10px;
+}
+
+
+
+
+.novbar-home {
+  display: flex;
+  color: #000000;
+  opacity: 0.6;
+  text-decoration: none;
+  padding-right: 0px;
+  transition: all .09s ease-in-out;
+
+}
+
+.novbar-home:hover {
+  opacity: 1;
+}
+
+.navbar-menu-info {
+  list-style-type: none;
+  /*nu vor fi puncte or marcari la elemente*/
+  padding-right: 16px;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu-info li a {
+  display: inline-block;
+  color: #000;
+  opacity: 0.6;
+  text-decoration: none;
+  padding: 20px;
+  transition: all .09s ease-in-out;
+}
+
+.navbar-menu-info li a:hover {
+  opacity: 1;
+}
+
+
+.navbar-wrap {
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+.navbar-brand {
+  padding-left: 40px;
+  font-weight: 800;
+  /*face textul gros*/
+  font-size: 40px;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-brand:hover {
+  color: coral;
+}
+
+
+
+
+
+
+@media (max-width: 1024px)
+/*pentru planset*/
+  {
+  .navbar-menu {
+    gap: 15px;
+  }
+
+  .navbar-brand {
+    font-size: 22px;
+  }
+
+  .navbar-menu-info {
+    gap: 15px;
+  }
+}
+
+/* pentru telefoane */
+@media (max-width: 768px) {
+  .navbar {
+    height: auto;
+    /*singura se schimba inaltimea */
+    flex-direction: column;
+    /* va fi in stolbic meniu */
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-wrap {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navbar-menu-info {
+    display: none;
+  }
+
+  .callback {
+    padding: 15px 25px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .novbar-home {
+    display: none;
+  }
+
+}
+
+/* pentru ecranuri foarte mici; tetris :)  */
+@media (max-width: 480px) {
+  .callback {
+    display: none;
+    /*ascund cnopca teh padejchi*/
+  }
+}
+
+.callback {
+  margin-left: 30px;
+  padding: 20px 40px;
+
+  background-color: coral;
+  border-radius: 100px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 10px 10px rgba(255, 127, 80, .2);
+  transition: all .1s ease-out;
+}
+
+.callback:hover {
+  transform: scale(1.04);
+  box-shadow: 0 9px 9px rgba(255, 127, 80, .5);
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+
+}
+
+.image-container img {
+  display: block;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin-left: 10px;
+
+}
+
+.image-container-1 {
+  position: relative;
+  display: inline-block;
+
+}
+
+.image-container-1 img {
+  display: block;
+
+
+}
+
+
+.image-box {
+  position: relative;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.image-box-sercive {
+  padding-left: 60px;
+  display: flex;
+
+}
+
+.image-container-abaut {
+  position: relative;
+  display: inline-block;
+  margin-left: 10%;
+
+}
+
+.image-container-abaut img {
+  display: block;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 640px;
+  height: auto;
+}
+
+/*stilul containerului cu text pe primul slaid */
+.image-container-1 {
+  position: relative;
+}
+
+.image-container-1 img {
+  display: block;
+}
+
+/* ascundem radiocnopchi*/
+input[type="radio"] {
+  display: none;
+}
+
+/* animatia de schimbare a slaidului */
+#slide1:checked~.slider-wrapper {
+  transform: translateX(0);
+}
+
+#slide2:checked~.slider-wrapper {
+  transform: translateX(-100%);
+}
+
+#slide3:checked~.slider-wrapper {
+  transform: translateX(-200%);
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 1.5em;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.slider-wrapper {
+  display: flex;
+  width: 100%;
+  /* asta pentru a 3 slaiduri  */
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+  min-width: 100%;
+}
+
+.slider-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  /* pentru a sahrani proportiile mastabez imaginele*/
+}
+
+/* stiliu la slaid */
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  /*controlează modul în care conținutul se comportă atunci când depășește dimensiunile containerului său si ceea ce iese nu se*/
+}
+
+.product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  /*ascunde totul ce iesi din granitele conteinerului*/
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product-info {
+  padding: 20px;
+}
+
+
+
+.product-grid {
+  display: grid;
+  /*elementele sunt intro setca*/
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /*sunt scrise parametrele pentru coloanele setchi*/
+  gap: 70px;
+  margin: 30px;
+}
+
+.product-grid-services {
+  display: grid;
+  /*elementele sunt intro setca*/
+  grid-template-columns: repeat(auto-fill, minmax(480px, 12fr));
+  /*sunt scrise parametrele pentru coloanele setchi*/
+  transition: transform 0.3s ease;
+  margin: 20px;
+  align-items: center;
+
+}
+
+.product-services {
+  background-color: #333;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: center;
+  height: 500px;
+  width: 45%;
+  margin: 30px;
+  margin-left: 27%;
+  transition: transform 0.3s ease;
+  box-shadow: 10px 2px 10px;
+  color: #000;
+  ;
+}
+
+.product-services:hover {
+  transform: scale(1.05);
+}
+
+
+
+.product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product:hover {
+  transform: scale(1.05);
+  /*cand pun mausul pe eceica asta ea se face mai mare cu 5 procente*/
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product-info {
+  padding: 20px;
+}
+
+.product-info h2 {
+  font-size: 1.2em;
+  /*ridica razmer srifta la 20 de procente dac era 16px ap inmultesc la 1.2*/
+  margin: 0;
+  color: #333;
+}
+
+.product-info p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.product-info .price {
+  font-size: 1.1em;
+  color: #e60023;
+}
+
+
+
+
+
+.h1 {
+  color: #0056b3;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  padding: 0;
+}
+
+.address {
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  padding: 0;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: white;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  z-index: 100;
+  user-select: none;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  margin-left: 140px;
+  margin-bottom: 90px;
+  font-size: 18px;
+  padding: 10px;
+  width: 76%;
+
+}
+
+.text-info {
+  font-weight: 100px;
+  /*face textul gros*/
+  font-size: 20px;
+  /*face razmer texta in px care ii pun */
+  /*поменять текст поставить ниже чтобы текст не был больше под фотку */
+  position: absolute;
+  top: 0px;
+  left: 825px;
+  color: rgb(0, 0, 0);
+  width: 70%;
+  height: 550px;
+  display: flex;
+  background-color: #e9e9e9;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.text-info-a {
+  font-weight: 20px;
+  /*face textul gros*/
+  font-size: 20px;
+  /*face razmer texta in px care ii pun */
+  position: absolute;
+  top: 150px;
+  left: 810px;
+  color: rgb(0, 0, 0);
+  width: 70%;
+  opacity: 0.8;
+}
+
+
+.text-overlay {
+  font-weight: 800;
+  font-size: 40px;
+  position: absolute;
+  top: 30px;
+  left: 700px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  /* Тень для читаемости текста */
+}
+
+.text-overlay-1 {
+  font-weight: 800;
+  font-size: 40px;
+  position: absolute;
+  top: 30px;
+
+  color: #ffffff;
+  padding-left: 660px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  width: 500px;
+}
+
+.text-overlay-2 {
+  font-weight: 800;
+  font-size: 40px;
+  position: absolute;
+  top: 30px;
+
+  color: #ffffff;
+  padding-left: 660px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  width: 500px;
+}
+
+
+
+.text-images {
+  font-weight: 20px;
+  /*face textul gros*/
+  font-size: 22px;
+  /*face razmer texta in px care ii pun */
+  position: absolute;
+  top: 0;
+  left: 640px;
+  color: rgb(0, 0, 0);
+  padding-left: 30px;
+  background-color: #ebebeb;
+  width: 70%;
+  height: 347px;
+  display: flex;
+  margin: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  padding-top: 80px;
+  padding-right: 20px;
+}
+
+.text-images-services {
+  font-weight: 15;
+  /*face textul gros*/
+  font-size: 15px;
+  /*face razmer texta in px care ii pun */
+  position: absolute;
+  top: 180px;
+  left: 630px;
+  color: rgb(0, 0, 0);
+  padding-left: 30px;
+  background-color: #ffffff;
+  width: 30%;
+  height: 315px;
+  display: flex;
+  margin: 20PX;
+  border-top-right-radius: 10px;
+
+}
+
+.text-images-img {
+  display: flex;
+  padding-left: 0px;
+  box-shadow: 10px 10px 10px rgb(0, 0, 0);
+  margin: 0;
+  width: 630px;
+  height: 315px;
+}
+
+.text-services {
+
+  text-decoration: none;
+  padding-top: 30px;
+  font-weight: 30px;
+  font-size: 23px;
+  color: #ffffff;
+  align-items: center;
+
+}
+
+
+
+.transparent-button {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border-radius: 30px;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  margin-left: 85px;
+  background-color: #ddd;
+  opacity: 0.7;
+}
+
+.transparent-button:hover {
+  transition: background-color 1s;
+  opacity: 1;
+}
+
+
+
+
+.transparent-button-1 {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border-radius: 30px;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  margin-left: 70px;
+  background-color: #ddd;
+  opacity: 0.7;
+}
+
+.transparent-button-1:hover {
+  background-color: #bbb;
+  opacity: 1;
+}
+
+.transparent-button-2 {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border-radius: 30px;
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  margin-left: 70px;
+  background-color: #ddd;
+  opacity: 0.7;
+
+}
+
+.transparent-button-2:hover {
+  background-color: #bbb;
+  opacity: 1;
+}
+
+
+/*strelchili care schimba slaidul */
+.left-arrow {
+  left: 5px;
+}
+
+.right-arrow {
+  right: 10px;
+}

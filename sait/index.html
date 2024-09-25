@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Гирлянды</title>
+  <link rel="stylesheet" href="index.css">
+  <!--failu index.css il padcliucesc da fara rel=stylesheet brauzeru nu va intelege ca failu padcliucit e o tablita si nu va citi acest index.css-->
+
+</head>
+
+<body>
+  <nav class="navbar"> <!--panelea pentru sait -->
+    <div class="container">
+      <a href="#chapter-1" ; class="navbar-brand">Каталог</a>
+      <div class="navbar-wrap"> <!-- infatisarea la menu si la cnopca teh paderjchi -->
+        <ul class="navbar-menu">
+          <li><a href="about-us.html">О нас</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="telefon.html">Контакты</a></li>
+          <li><a href="#">Коллаборация</a></li>
+        </ul>
+        <a href="#" class="callback"> Техническая поддержка
+        </a>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <div class="slider">
+    <!-- radio cnopchi pentru a controla cu slaidul-->
+    <input type="radio" name="slider" id="slide1" checked>
+    <input type="radio" name="slider" id="slide2">
+    <input type="radio" name="slider" id="slide3">
+
+    <div class="slider-wrapper">
+      <!-- primu slaid -->
+      <div class="slider-item">
+
+        <img src="images/fon.png" alt="ustanovka">
+        <div class="text-overlay">
+          УСТАНОВИ <br> СВОЮ ГИРЛЯНДУ <br> ПРАВИЛЬНО <br>
+          <a href="services.html" class="transparent-button">перейти</a>
+
+        </div>
+      </div>
+
+
+      <div class="slider-item">
+        <img src="images/girleandafon.png" class="slider-image" alt="Photo 2">
+        <div class="text-overlay-1">
+          СДЕЛАЙ<br> СВОЙ МОНТАЖ <br> УМНО<br>
+          <a href="services.html#chapter-2" ; class="transparent-button-1">Перейти </a>
+        </div>
+
+
+      </div>
+
+
+      <div class="slider-item">
+        <img src="images/fonhouse.png" class="slider-image" alt="Photo 3">
+        <div class="text-overlay-2">
+          УКРАШАЙ <br> МЕСТО ЖИТЕЛЬСТО <br> ПРАВИЛЬНО <br>
+          <a href="services.html#chapter-3" ; class="transparent-button-2">перейти</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- strelca din slinga si dreapta -->
+    <div class="arrow left-arrow" onclick="moveSlide(-1)">&#10094;</div>
+    <div class="arrow right-arrow" onclick="moveSlide(1)">&#10095;</div>
+  </div>
+
+  <script>
+    let currentSlide = 1;//astai peremennaia care contine numarul la текущий slaid sii pus la inceput 1(primul slaid)
+    const totalSlides = 3;//astai constanta care arata cit total sunt slaiduri 3
+
+    function/*functie*/ moveSlide/*parametr care apredeleste napravlenia la slaid putem sai pun 1 carei inainte sau -1 carei imapoi*/(direction) {
+      currentSlide += direction;//ridica sau scade numarul slaidului in dependenta de napravlenie
+
+      if (currentSlide < 1)/*dac numarul la slaidul dat e mai mic de 1 atunci trecem la ultimul slaid care e al treilea(total slaiders)*/ {
+        currentSlide = totalSlides;
+      } else if (currentSlide > totalSlides)/*dac numarul previsaet vse calicestva slaida adic 3 atunci trece la primul slaid*/ {
+        currentSlide = 1;
+      }
+
+      document.getElementById('slide' + currentSlide).checked = true;//aici e elementul cu id care are tecusii slaid cum ar fi side1 sau slide2 ssi ii face sastaiania cheked facem asta pentru a arata tecusii clasid
+
+    }
+  </script>
+
+  <br> <br> <br> <br>
+  <br><br><br><br><br><br>
+  <div class="image-container">
+    <img src="images/house.png" alt="">
+    <a class="text-info">
+      <ul style="padding-left: 25px;margin-right: 7px;">Хотите красочно оформить фасад здания? Эффектно декорировать
+        деревья у входа, интересно украсить интерьер к
+        празднику? Используйте светодиодные гирлянды Гирлянда.мд</ul><br><br>
+
+      <a style="font-size:smaller ;" class="text-info-a ">
+        <ul style="list-style-type: none;">
+          <li>вам нужны гирлянды, Москва в своих магазинах предложит множество вариантов. Однако, только в Гирлянда.мд
+            можно
+            купить качественную светотехнику для наружного и внутреннего декоративного освещения. Спешите купить
+            гирлянды,
+            ведь готовиться к праздникам стоит заблаговременно. Особенно если это новогодние и рождественские торжества,
+            которые никогда не обходятся без красивой красочной декоративной светотехники, иллюминации и новогодних
+            гирлянд!<br><br><br>
+
+            В нашем магазине обязательно найдется гирлянда, которая сделает ваш праздник ярким и запоминающимся. Для
+            оформления светотехнической композиции вы также можете выбрать все необходимые украшения и комплектующие для
+            быстрого и эффективного монтажа любой светотехники. Купить гирлянду в Гирлянда.мд», значит остановить свой
+            выбор на декоративной светотехнике отменного качества.
+          </li>
+          <li style="padding-left:20% ; padding-top: 50px;font-size: 30px;color:black;opacity: 0.1;">
+            Лучшее только у нас
+
+          </li>
+        </ul>
+
+      </a>
+
+    </a>
+  </div>
+  <br> <br> <br> <br> <br> <br>
+  <br> <br> <br> <br> <br> <br>
+
+  <h2 class="section-title" ; id="chapter-1"></h2>
+  <div class="product-grid">
+    <div class="product">
+      <img src="images/gold.png" alt="Гирлянда 1">
+      <div class="product-info">
+        <h2>Гирлянда Золотая</h2>
+        <p>Красивое золото для вашего праздника.</p>
+        <p class="price">$29.99</p>
+      </div>
+    </div>
+    <div class="product">
+      <img src="images/red.png" alt="Гирлянда 2">
+      <div class="product-info">
+        <h2>Гирлянда Красная</h2>
+        <p>Яркая и эффектная красная гирлянда.</p>
+        <p class="price">$34.99</p>
+      </div>
+    </div>
+    <div class="product">
+      <img src="images/snow.png" alt="Гирлянда 3">
+      <div class="product-info">
+        <h2>Гирлянда Снежная</h2>
+        <p>Белый и блестящий снег.</p>
+        <p class="price">$24.99</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="images/green.png" alt="Гирлянда 4">
+      <div class="product-info">
+        <h2>Гирлянда Зеленая</h2>
+        <p>Свежий зеленый цвет для ёлки.</p>
+        <p class="price">$27.99</p>
+      </div>
+    </div>
+    <div class="product">
+      <img src="images/serebro.png" alt="Гирлянда 5">
+      <div class="product-info">
+        <h2>Гирлянда Серебряная</h2>
+        <p>Шикарное серебро для вашего интерьера.</p>
+        <p class="price">$32.99</p>
+      </div>
+    </div>
+    <div class="product">
+      <img src="images/raduga.png" alt="Гирлянда 6">
+      <div class="product-info">
+        <h2>Гирлянда Радужная</h2>
+        <p>Многоцветная гирлянда для веселья.</p>
+        <p class="price">$36.99</p>
+      </div>
+    </div>
+    <div class="product">
+      <img src="images/prazdnic.png" alt="Гирлянда 7">
+      <div class="product-info">
+        <h2>Гирлянда Праздничная</h2>
+        <p>Праздничное оформление для вашего дома.</p>
+        <p class="price">$39.99</p>
+      </div>
+    </div>
+    <div class="product">
+      <img src="images/frost.png" alt="Гирлянда 8">
+      <div class="product-info">
+        <h2>Гирлянда Ледяная</h2>
+        <p>Оформление в стиле зимней сказки.</p>
+        <p class="price">$30.99</p>
+      </div>
+    </div>
+    <div class="product">
+      <img src="images/pastelinaia.jpg" alt="Гирлянда 9">
+      <div class="product-info">
+        <h2>Гирлянда Пастельная</h2>
+        <p>Мягкие пастельные оттенки для уютной атмосферы.</p>
+        <p class="price">$25.99</p>
+      </div>
+    </div>
+    <div class="product">
+      <img src="images/blue.png" alt="Гирлянда 10">
+      <div class="product-info">
+        <h2>Гирлянда Синия</h2>
+        <p>Яркие и сверкающие цвета.</p>
+        <p class="price">$28.99</p>
+      </div>
+    </div>
+  </div>
+
+
+  <nav class="navbar-telefon">
+    <div class="container-telefon">
+      <div>
+        <a class="navbar-brand-telefon ">
+          Информация:
+        </a>
+        <div class="navbar-wrap-telefon ">
+          <ul class="navbar-menu-info-telefon">
+            <li>
+              <a>
+                Номер телефонаж:+373(0) 69 123 456
+              </a>
+            </li>
+            <li>
+              <a>
+                Номер стационарного:231 456 7892
+              </a>
+            </li>
+            <li>
+              <a>
+                Улица:38, MD-3100, Bălți, Молдова
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+</body>
+
+</html>
