@@ -41,6 +41,16 @@ body {
   /* rastaiania intre elemente */
 }
 
+.novbar-home {
+  display: flex;
+  color: #000000;
+  opacity: 0.6;
+  text-decoration: none;
+  padding-right: 0px;
+  transition: all .09s ease-in-out;
+
+}
+
 .navbar-menu li a {
   display: inline-block;
   color: #000;
@@ -56,6 +66,71 @@ body {
   /*il face din nou vizibil polnastiu*/
 
 }
+
+.novbar-home:hover {
+  opacity: 1;
+}
+
+.navbar-telefon {
+  /*panelea de sus pentru sait*/
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 4px 100px rgba(0, 0, 0, .1);
+  display: flex;
+  justify-content: space-between;
+  /*primu element e in urma ultimul la sfirsit iar altele se pun intre ele intrun sir*/
+  background: #fff;
+  position: relative;
+  z-index: 1000;
+  /*elementul va fi deasupra elementelor cu z-index mai mic(aici nu trebuie) */
+
+
+}
+
+.navbar-telefon .container-telefon {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 70px;
+}
+
+.navbar-wrap-telefon {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 30px;
+
+}
+
+.navbar-brand-telefon {
+  font-weight: 300;
+  /*face textul gros*/
+  font-size: 25px;
+  /*face razmer texta in px care ii pun */
+  color: #000;
+  position: relative;
+  top: 40px;
+  margin-left: 40px;
+}
+
+.navbar-menu-info-telefon {
+  display: flex;
+  bottom: 30px;
+  position: relative;
+  margin-left: 130px;
+  list-style-type: none;
+}
+
+.navbar-menu-info-telefon li a {
+
+  margin-left: 50px;
+  display: flex;
+  color: #000;
+  position: relative;
+  bottom: 10px;
+}
+
+
 
 .navbar-wrap {
   padding-right: 30px;
@@ -175,75 +250,106 @@ body {
 
 }
 
-.novbar-home {
-  display: flex;
-  color: #000000;
-  opacity: 0.6;
-  text-decoration: none;
-  padding-right: 0px;
-  transition: all .09s ease-in-out;
+/*jos e partea la catalog.html*/
+.product {
+  background-color: #ffffff;
 
+
+  overflow: hidden;
+  /*ascunde totul ce iesi din granitele conteinerului*/
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  height: auto;
 }
 
-.novbar-home:hover {
-  opacity: 1;
-}
-
-.navbar-telefon {
-  /*panelea de sus pentru sait*/
-  margin-top: 100px;
+.product img {
   width: 100%;
   height: 100%;
-  box-shadow: 0px 4px 100px rgba(0, 0, 0, .1);
-  display: flex;
-  justify-content: space-between;
-  /*primu element e in urma ultimul la sfirsit iar altele se pun intre ele intrun sir*/
-  background: #fff;
-  position: relative;
-  z-index: 1000;
-  /*elementul va fi deasupra elementelor cu z-index mai mic(aici nu trebuie) */
+}
 
+.product-principal {
+  display: flex;
+  border: 1px solid rgb(255, 255, 255);
 
 }
 
-.navbar-telefon .container-telefon {
+.product-grid {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-left: 70px;
+  /*elementele sunt intro setca*/
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /*sunt scrise parametrele pentru coloanele setchi*/
+  padding-left: 10%;
+  padding-top: 50px;
 }
 
-.navbar-wrap-telefon {
-  display: flex;
-  margin-top: 40px;
-  margin-left: 30px;
-
-}
-
-.navbar-brand-telefon {
-  font-weight: 300;
-  /*face textul gros*/
-  font-size: 25px;
-  /*face razmer texta in px care ii pun */
-  color: #000;
-  position: relative;
-  top: 40px;
-  margin-left: 40px;
-}
-
-.navbar-menu-info-telefon {
-  display: flex;
-  bottom: 30px;
-  position: relative;
-  margin-left: 130px;
+.bay-delivery {
   list-style-type: none;
+  border: 1px solid;
+  border-radius: 5px;
+
+  display: inline-block;
+  padding: 10px;
+
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  padding-left: 35px;
+  padding-right: 40px;
+  background-color: rgb(160, 34, 192);
+  transition: transform 0.3s ease;
+
 }
 
-.navbar-menu-info-telefon li a {
+.bay-delivery:hover {
+  transform: scale(1.05);
+}
 
-  margin-left: 50px;
+.bay-basket {
+  margin-top: 13px;
+  border: 1px solid white;
+  border-radius: 5px;
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+  padding-left: 35px;
+  padding-right: 35px;
+
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(160, 34, 192);
+  background-color: #dbd0da;
+  transition: transform 0.3s ease;
+}
+
+.bay-basket:hover {
+  transform: scale(1.05);
+}
+
+
+
+.box-bay {
+
+
+  background: #ffffff;
+  margin: 0;
+  width: 400px;
+  height: 500px;
+
+}
+
+.text-bay {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
   display: flex;
-  color: #000;
-  position: relative;
-  bottom: 10px;
+  color: #000000;
+
+
+
+}
+
+.teg-delete {
+  text-decoration: none;
+  color: inherit;
 }
