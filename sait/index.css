@@ -232,18 +232,18 @@ body {
     /* va fi in stolbic meniu */
   }
 
-    .navbar-menu {
-      display: none;
-    }
+  .navbar-menu {
+    display: none;
+  }
 
-    .navbar-wrap {
-      flex-direction: column;
-      gap: 20px;
-    }
+  .navbar-wrap {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    .navbar-menu-info {
-      display: none;
-    }
+  .navbar-menu-info {
+    display: none;
+  }
 
   .callback {
     padding: 15px 25px;

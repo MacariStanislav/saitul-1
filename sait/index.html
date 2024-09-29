@@ -71,23 +71,10 @@
     <div class="arrow right-arrow" onclick="moveSlide(1)">&#10095;</div>
   </div>
 
-  <script>
-    let currentSlide = 1;//astai peremennaia care contine numarul la текущий slaid sii pus la inceput 1(primul slaid)
-    const totalSlides = 3;//astai constanta care arata cit total sunt slaiduri 3
+  <script src="slider.js">
 
-    function/*functie*/ moveSlide/*parametr care apredeleste napravlenia la slaid putem sai pun 1 carei inainte sau -1 carei imapoi*/(direction) {
-      currentSlide += direction;//ridica sau scade numarul slaidului in dependenta de napravlenie
-
-      if (currentSlide < 1)/*dac numarul la slaidul dat e mai mic de 1 atunci trecem la ultimul slaid care e al treilea(total slaiders)*/ {
-        currentSlide = totalSlides;
-      } else if (currentSlide > totalSlides)/*dac numarul previsaet vse calicestva slaida adic 3 atunci trece la primul slaid*/ {
-        currentSlide = 1;
-      }
-
-      document.getElementById('slide' + currentSlide).checked = true;//aici e elementul cu id care are tecusii slaid cum ar fi side1 sau slide2 ssi ii face sastaiania cheked facem asta pentru a arata tecusii clasid
-
-    }
   </script>
+
 
   <br> <br> <br> <br>
   <br><br><br><br><br><br>

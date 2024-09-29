@@ -284,13 +284,13 @@ body {
 }
 
 .bay-delivery {
-  list-style-type: none;
+  
   border: 1px solid;
   border-radius: 5px;
 
   display: inline-block;
   padding: 10px;
-
+  list-style-type: none;
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
@@ -325,7 +325,40 @@ body {
 .bay-basket:hover {
   transform: scale(1.05);
 }
+.bay-text {
+  margin-top: 63px;
 
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+
+  margin-right: 15px;
+  padding-right: 63px;
+
+  font-size: 30px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+}
+
+.bay-mesage {
+  margin-top: 50px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+ 
+  
+color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  background-color: #0004ff;
+  transition: transform 0.3s ease;
+}
 
 
 .box-bay {
@@ -352,4 +385,17 @@ body {
 .teg-delete {
   text-decoration: none;
   color: inherit;
+ 
+}
+.teg-delete-1 {
+  text-decoration: none;
+  color: inherit;
+ display: flex;
+  text-align: center;
+}
+.teg-delete-2{
+  text-decoration: none;
+  color: inherit;
+ display: flex;
+  text-align: center;
 }
