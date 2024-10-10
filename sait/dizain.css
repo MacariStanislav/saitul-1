@@ -204,8 +204,8 @@ body {
 }
 
 .text-services-dizainer-1 {
-  font-size: small;
-  opacity: 0.5;
+  font-size: 15px;
+  opacity: 0.4;
   padding-left: 140px;
   padding-top: 30px;
   margin-bottom: 2%;
@@ -359,6 +359,9 @@ color: rgb(255, 255, 255);
   background-color: #0004ff;
   transition: transform 0.3s ease;
 }
+.bay-mesage:hover{
+  transform: scale(1.05);
+}
 
 
 .box-bay {
@@ -391,11 +394,20 @@ color: rgb(255, 255, 255);
   text-decoration: none;
   color: inherit;
  display: flex;
-  text-align: center;
+ 
 }
 .teg-delete-2{
   text-decoration: none;
   color: inherit;
  display: flex;
   text-align: center;
+ 
+
+}
+
+.sum-principal{
+  padding-left: 275px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+ color: rgb(0, 0, 0);
 }
