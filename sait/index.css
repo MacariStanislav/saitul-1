@@ -387,6 +387,8 @@ section {
   min-width: 100%;
 }
 
+
+
 .slider-image {
   width: 100%;
   height: 400px;
@@ -538,6 +540,7 @@ section {
   padding: 0;
 }
 
+
 .arrow {
   position: absolute;
   top: 50%;
@@ -549,6 +552,22 @@ section {
   cursor: pointer;
   z-index: 100;
   user-select: none;
+}
+.arrow-right-arrow   {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: white;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  z-index: 100;
+  user-select: none;
+  left: 97.5%;
+}
+.arrow-right-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .arrow:hover {
