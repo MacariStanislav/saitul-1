@@ -10,8 +10,35 @@ body {
   padding: 0;
 
 }
+.navbar-menu-info {
+  list-style-type: none;
+  /*nu vor fi puncte or marcari la elemente*/
+  padding-right: 16px;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu-info li a {
+  display: inline-block;
+  color: #000;
+  opacity: 0.6;
+  text-decoration: none;
+  padding: 20px;
+  transition: all .09s ease-in-out;
+}
+
+.navbar-menu-info li a:hover {
+  opacity: 1;
+}
 
 
+.navbar-wrap {
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 .navbar {
   /*panelea de sus pentru sait*/
   width: 100%;
@@ -157,35 +184,9 @@ body {
   opacity: 1;
 }
 
-.navbar-menu-info {
-  list-style-type: none;
-  /*nu vor fi puncte or marcari la elemente*/
-  padding-right: 16px;
-  margin: 0;
-  display: flex;
-  gap: 20px;
-}
-
-.navbar-menu-info li a {
-  display: inline-block;
-  color: #000;
-  opacity: 0.6;
-  text-decoration: none;
-  padding: 20px;
-  transition: all .09s ease-in-out;
-}
-
-.navbar-menu-info li a:hover {
-  opacity: 1;
-}
 
 
-.navbar-wrap {
-  padding-right: 30px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
+
 
 
 
@@ -286,7 +287,7 @@ body {
 .image-container {
   position: relative;
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 46px;
 
 }
 
@@ -374,6 +375,7 @@ section {
   font-size: 1.5em;
   margin-bottom: 50px;
   color: #333;
+  
 }
 
 .slider-wrapper {
@@ -403,6 +405,17 @@ section {
   overflow: hidden;
   /*controlează modul în care conținutul se comportă atunci când depășește dimensiunile containerului său si ceea ce iese nu se*/
 }
+.position{
+  margin-left: 40%;
+  font-size: 30px;
+ border: 1px solid black;
+display: inline-block;
+border-radius: 50%;
+ padding: 10px;
+
+
+}
+
 
 .product {
   background-color: #fff;
@@ -573,6 +586,9 @@ section {
 .arrow:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+.about__my{
+  padding-left: 570px 
+}
 
 .text {
 
@@ -603,7 +619,12 @@ section {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-
+.text__info__first {
+  padding-left: 25px;margin-right: 7px
+}
+.text__info__two {
+  list-style-type: none;
+}
 .text-info-a {
   font-weight: 20px;
   /*face textul gros*/
@@ -615,6 +636,10 @@ section {
   color: rgb(0, 0, 0);
   width: 70%;
   opacity: 0.8;
+  font-size:smaller ;
+}
+.text__info__perfect-my{
+  padding-left:20% ; padding-top: 50px;font-size: 30px;color:black;opacity: 0.1;
 }
 
 
@@ -717,8 +742,11 @@ section {
   font-size: 23px;
   color: #ffffff;
   align-items: center;
- 
+  padding-top:50px 
 
+}
+.text__montain{
+  text-align: center;padding-top: 100px;
 }
 .text-services p {
   border: solid 1px rgb(99, 161, 232);
@@ -792,6 +820,24 @@ section {
 .transparent-button-2:hover {
   background-color: #bbb;
   opacity: 1;
+}
+.email p {
+  color: #000000;
+  padding-left: 20px;
+  padding-top: 30px;
+  font-size: 25px;
+  text-decoration: none;
+
+}
+.email p a {
+  color: #000000;
+
+  font-size: 25px;
+  text-decoration: none;
+transition: all 0.5s ease-in-out;
+}
+.email p a:hover {
+  color: #e60023;
 }
 
 
