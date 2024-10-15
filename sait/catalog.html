@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <header>
   <nav class="navbar"> <!--panelea pentru sait -->
     <div class="container">
       <a href="index.html#chapter-1" ; class="navbar-brand">Каталог</a>
@@ -21,21 +22,24 @@
 
         </ul>
         <a href="index.html" class="novbar-home">Основная странича</a>
-        <a href="#" class="callback"> Техническая поддержка
+        <a href="help.html" class="callback"> Техническая поддержка
         </a>
 
       </div>
     </div>
   </nav>
+</header>
+<main>
+<div class="all__product__info">
   <div class="text__info">
-    <a class="text__name">Золотая гирлянда</a>
-    <a class="sum-principal">29.99 $</a>
+    <a class="text__name" id="product-name"></a>
+    
   </div>
 
   <div class="product-grid">
     <div class="product-principal">
       <div class="product">
-        <img src="images/gold.png" alt="Гирлянда 1">
+        <img src="" alt="Гирлянда 1" id="product-image">
 
       </div>
       <div class="box-bay">
@@ -43,21 +47,24 @@
           <ul class="text__last">
             <li class="bay-delivery"><a href="#" class="teg-delete ">Купить с доставкой</a></li>
             <li class="bay-basket"><a href="#" class="teg-delete ">Добавить в корзину</a></li>
-            <li class="bay-text"><a class="teg-delete-1 ">Золотая гирлянда<br> для укрощения <br>вашего прекрасного
-                дома</a></li>
+            <li class="bay-text"  id="product-description"><a class="teg-delete-1 "></a></li>
 
             <li class="bay-mesage"><a href="#" class="teg-delete-2 ">Написать сообщение<br>Ответим в течение дня</a>
+              
             </li>
-
+            
           </ul>
-
-
+          <div> <a class="sum-principal" id="product-price">29.99 $</a></div>
 
       </div>
     </div>
   </div>
-
-
+</div>
+  <script src="product.js">
+    
+</script>
+</main>
+<footer>
   <nav class="navbar-telefon">
     <div class="container-telefon">
       <div>
@@ -87,6 +94,7 @@
       </div>
     </div>
   </nav>
+</footer>
 </body>
 
 </html>

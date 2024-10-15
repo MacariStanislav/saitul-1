@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="help.css">
+</head>
+
+<script>
+    function toggleAnswer(event) {//Это объявление функции с именем toggleAnswer, которая принимает один аргумент — event. Этот аргумент представляет собой объект события, который содержит информацию о событии, вызвавшем функцию (например, клик мыши).
+        const answer = event.target.nextElementSibling;//event.target — это элемент, на который пользователь кликнул (в данном случае заголовок вопроса).nextElementSibling — это свойство, которое возвращает следующий соседний элемент (в DOM-структуре) после event.target. Обычно это будет элемент, содержащий ответ на вопрос.Таким образом, эта строка сохраняет в переменной answer ссылку на следующий элемент после заголовка (например, блок с ответом).
+        
+        answer.style.display = answer.style.display === "block" ? "none" : "block";//Здесь происходит переключение видимости ответа.answer.style.display — обращение к свойству display CSS у элемента answer.Условие answer.style.display === "block" проверяет, установлен ли стиль display в "block" (что означает, что элемент видим).Если элемент видим (display === "block"), то он скрывается ("none"). Если он скрыт, то он отображается ("block").Оператор ? : — это тернарный оператор, который позволяет выполнять условное выражение в одной строке.
+    }
+</script>
+
+<body>
+    <header>
+        <nav class="navbar"> <!--panelea pentru sait -->
+            <div class="containers">
+                <a href="index.html#chapter-1" ; class="navbar-brand">Каталог</a>
+                <div class="navbar-wrap"> <!-- infatisarea la menu si la cnopca teh paderjchi -->
+                    <ul class="navbar-menu">
+                        <li><a href="about-us.html">О нас</a></li>
+                        <li><a href="services.html">Услуги</a></li>
+                        <li><a href="telefon.html">Контакты</a></li>
+                        <li><a href="colaboration.html">Коллаборация</a></li>
+                    </ul>
+                    <a href="index.html" class="novbar-home">Основная странича</a>
+                    <a href="help.html" class="callback"> Техническая поддержка
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <br>
+    </header>
+    <main>
+
+
+
+
+        <div class="container">
+            <h1>Техническая поддержка</h1>
+
+            <div class="faq">
+                <h2>Часто задаваемые вопросы</h2>
+                <h3 onclick="toggleAnswer(event)">Как выбрать гирлянду для улицы?</h3>
+                <div class="faq-answer">Выбирайте гирлянды с защитой от влаги и морозов. Обратите внимание на яркость и
+                    длину проводов.</div>
+
+                <h3 onclick="toggleAnswer(event)">Как подключить гирлянду?</h3>
+                <div class="faq-answer">Подключите гирлянду к розетке, убедившись, что она подходит для использования в
+                    помещении или на улице.</div>
+
+                <h3 onclick="toggleAnswer(event)">Что делать, если гирлянда не работает?</h3>
+                <div class="faq-answer">Проверьте подключение к сети и состояние предохранителя. Если проблема не
+                    решается, обратитесь в поддержку.</div>
+            </div>
+
+            <div class="contact-form">
+                <h2>Связаться с нами</h2>
+                <form>
+                    <div class="form-field">
+                        <input type="text" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-field">
+                        <input type="email" placeholder="Ваш email" required>
+                    </div>
+                    <div class="form-field">
+                        <textarea placeholder="Описание проблемы" rows="4" required class="textarea"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+
+                <p>Часы работы: Пн-Пт 9:00 - 18:00</p>
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <nav class="navbar-telefon">
+            <div class="container-telefon">
+                <div>
+                    <a class="navbar-brand-telefon ">
+                        Информация:
+                    </a>
+                    <div class="navbar-wrap-telefon ">
+                        <ul class="navbar-menu-info-telefon">
+                            <li>
+                                <a>
+                                    Номер телефонаж:+373(0) 69 123 456
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    Номер стационарного:231 456 7892
+                                </a>
+                            </li>
+                            <li>
+                                <a>
+                                    Улица:38, MD-3100, Bălți, Молдова
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+
+.navbar-menu-info {
+  list-style-type: none;
+  /*nu vor fi puncte or marcari la elemente*/
+  padding-right: 16px;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-menu-info li a {
+  display: inline-block;
+  color: #000;
+  opacity: 0.6;
+  text-decoration: none;
+  padding: 20px;
+  transition: all .09s ease-in-out;
+}
+
+.navbar-menu-info li a:hover {
+  opacity: 1;
+}
+
+
+.navbar-wrap {
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navbar {
+  /*panelea de sus pentru sait*/
+  width: 100%;
+  height: 90px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+  display: flex;
+  justify-content: space-between;
+  /*primu element e in urma ultimul la sfirsit iar altele se pun intre ele intrun sir*/
+  background: #fff;
+  position: relative;
+  z-index: 1000;
+  /*elementul va fi deasupra elementelor cu z-index mai mic(aici nu trebuie) */
+
+}
+
+.navbar .containers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%
+}
+
+.navbar-menu {
+  list-style-type: none;
+  /*nu vor fi puncte or marcari la elemente*/
+  padding-right: 200px;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  /* rastaiania intre elemente */
+}
+
+
+
+.navbar-menu li a {
+  display: inline-block;
+  color: #000;
+  opacity: 0.6;
+  /*prazracinii face*/
+  text-decoration: none;
+  padding: 20px;
+  transition: all .09s ease-in-out;
+}
+
+.navbar-menu li a:hover {
+  opacity: 1;
+  /*il face din nou vizibil polnastiu*/
+
+}
+.novbar-home {
+    display: flex;
+    color: #000000;
+    opacity: 0.6;
+    text-decoration: none;
+    padding-right: 0px;
+    transition: all .09s ease-in-out;
+  
+  }
+  
+  .novbar-home:hover {
+    opacity: 1;
+  }
+  
+  
+  
+  
+  
+  
+  
+  .navbar-brand {
+    padding-left: 40px;
+    font-weight: 800;
+    /*face textul gros*/
+    font-size: 40px;
+    text-decoration: none;
+    color: #000;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navbar-brand:hover {
+    color: coral;
+  }
+  .callback {
+    margin-left: 30px;
+    padding: 20px 40px;
+  
+    background-color: coral;
+    border-radius: 100px;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 10px 10px rgba(255, 127, 80, .2);
+    transition: all .1s ease-out;
+  }
+  
+  .callback:hover {
+    transform: scale(1.04);
+    box-shadow: 0 9px 9px rgba(255, 127, 80, .5);
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+   margin: 0px;
+   padding: 0px;
+  
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.faq {
+    margin-bottom: 20px;
+}
+.faq h3 {
+    cursor: pointer;
+    margin: 10px 0;
+}
+.faq-answer {
+    display: none;
+    margin-left: 20px;
+    color: #555;
+}
+.contact-form {
+    margin: 20px 0;
+}
+.form-field {
+    margin-bottom: 15px;
+}
+.form-field input, .form-field textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.submit-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact-info {
+    margin-top: 20px;
+}
+.navbar-telefon-index {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: space-between;
+    /*primu element e in urma ultimul la sfirsit iar altele se pun intre ele intrun sir*/
+    background: #fff;
+    position: relative;
+    z-index: 1000;
+    /*elementul va fi deasupra elementelor cu z-index mai mic(aici nu trebuie) */
+  
+  }
+  
+  .navbar-telefon-index .container-telefon-index {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .navbar-telefon {
+    /*panelea de sus pentru sait*/
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, .1);
+    display: flex;
+    justify-content: space-between;
+    /*primu element e in urma ultimul la sfirsit iar altele se pun intre ele intrun sir*/
+    background: #fff;
+    position: relative;
+    z-index: 1000;
+    /*elementul va fi deasupra elementelor cu z-index mai mic(aici nu trebuie) */
+  
+  
+  }
+  
+  .navbar-telefon .container-telefon {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 70px;
+  }
+  
+  .navbar-wrap-telefon {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 30px;
+  
+  }
+  
+  .navbar-brand-telefon {
+    font-weight: 300;
+    /*face textul gros*/
+    font-size: 25px;
+    /*face razmer texta in px care ii pun */
+    color: #000;
+    position: relative;
+    top: 40px;
+    margin-left: 40px;
+  }
+  
+  .navbar-menu-info-telefon {
+    display: flex;
+    bottom: 30px;
+    position: relative;
+    margin-left: 130px;
+    list-style-type: none;
+  }
+  
+  .navbar-menu-info-telefon li a {
+  
+    margin-left: 50px;
+    display: flex;
+    color: #000;
+    position: relative;
+    bottom: 10px;
+  }
+  .textarea{resize: none;}
