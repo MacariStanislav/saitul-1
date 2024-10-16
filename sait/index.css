@@ -64,6 +64,7 @@ background-color: coral;
   position: relative;
   z-index: 1000;
   /*elementul va fi deasupra elementelor cu z-index mai mic(aici nu trebuie) */
+  
 
 }
 
@@ -226,6 +227,7 @@ background-color: coral;
 @media (max-width: 1024px)
 /*pentru planset*/
   {
+    
   .navbar-menu {
     gap: 15px;
   }
