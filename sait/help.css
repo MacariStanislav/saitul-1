@@ -1,4 +1,3 @@
-
 .navbar-menu-info {
   list-style-type: none;
   /*nu vor fi puncte or marcari la elemente*/
@@ -7,7 +6,56 @@
   display: flex;
   gap: 20px;
 }
+.navbar__phone {
+  display: none;
 
+  background-color: rgb(0, 0, 0);
+ 
+  width: 100%;
+
+  height: 250px;
+  margin-bottom: 100px;
+}
+
+.navbar__phone__menu {
+  display: flex;
+
+}
+
+.navbar__phone__menu ul {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #000;
+  color: coral;
+  padding: 26px;
+  padding-top: 0px;
+  align-items: center;
+  list-style: none;
+  gap: 5px;
+  /* padding-left: 99px; */
+  margin-left: 61%;
+  flex-direction: column;
+  display: flex;
+  
+ 
+}
+.navbar__phone__menu ul a {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #000;
+  color: coral;
+  padding: 10px;
+  list-style: none;
+  gap: 20px;
+  text-decoration: none;
+ 
+  flex-direction: column;
+  display: flex; 
+
+}
+.navbar__help__phone{
+  margin-left: 5px;
+}
 .navbar-menu-info li a {
   display: inline-block;
   color: #000;
@@ -28,6 +76,7 @@
   align-items: center;
   gap: 20px;
 }
+
 .navbar {
   /*panelea de sus pentru sait*/
   width: 100%;
@@ -77,186 +126,555 @@
   /*il face din nou vizibil polnastiu*/
 
 }
+
 .novbar-home {
-    display: flex;
-    color: #000000;
-    opacity: 0.6;
-    text-decoration: none;
-    padding-right: 0px;
-    transition: all .09s ease-in-out;
-  
-  }
-  
-  .novbar-home:hover {
-    opacity: 1;
-  }
-  
-  
-  
-  
-  
-  
-  
-  .navbar-brand {
-    padding-left: 40px;
-    font-weight: 800;
-    /*face textul gros*/
-    font-size: 40px;
-    text-decoration: none;
-    color: #000;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .navbar-brand:hover {
-    color: coral;
-  }
-  .callback {
-    margin-left: 30px;
-    padding: 20px 40px;
-  
-    background-color: coral;
-    border-radius: 100px;
-    color: white;
-    text-decoration: none;
-    box-shadow: 0 10px 10px rgba(255, 127, 80, .2);
-    transition: all .1s ease-out;
-  }
-  
-  .callback:hover {
-    transform: scale(1.04);
-    box-shadow: 0 9px 9px rgba(255, 127, 80, .5);
-  }
-  body {
-    font-family: Arial, sans-serif;
-  
-   margin: 0px;
-   padding: 0px;
-  
+  display: flex;
+  color: #000000;
+  opacity: 0.6;
+  text-decoration: none;
+  padding-right: 0px;
+  transition: all .09s ease-in-out;
+
+}
+
+.novbar-home:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+.navbar-brand {
+  padding-left: 40px;
+  font-weight: 800;
+  /*face textul gros*/
+  font-size: 40px;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-brand:hover {
+  color: coral;
+}
+
+.callback {
+  margin-left: 30px;
+  padding: 20px 30px;
+
+  background-color: coral;
+  border-radius: 100px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 10px 10px rgba(255, 127, 80, .2);
+  transition: all .1s ease-out;
+}
+
+.callback:hover {
+  transform: scale(1.04);
+  box-shadow: 0 9px 9px rgba(255, 127, 80, .5);
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+  margin: 0px;
+  padding: 0px;
+
 }
 
 .container {
-    max-width: 800px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 .help__h2 {
   margin-left: 220px;
   font-size: 32px;
 }
+
 .faq {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
+
 .faq h3 {
-    cursor: pointer;
-    margin: 10px 0;
+  cursor: pointer;
+  margin: 10px 0;
 }
+
 .faq-answer {
-    display: none;
-    margin-left: 20px;
-    color: #555;
+  display: none;
+  margin-left: 20px;
+  color: #555;
 }
+
 .contact-form {
-    margin: 20px 0;
+  margin: 20px 0;
 }
+
 .form-field {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
-.form-field input, .form-field textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
+
 .submit-btn {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }
+
 .contact-info {
-    margin-top: 20px;
+  margin-top: 20px;
 }
+
 .navbar-telefon-index {
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, .1);
-    display: flex;
-    justify-content: space-between;
-    /*primu element e in urma ultimul la sfirsit iar altele se pun intre ele intrun sir*/
-    background: #fff;
-    position: relative;
-    z-index: 1000;
-    /*elementul va fi deasupra elementelor cu z-index mai mic(aici nu trebuie) */
-  
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, .1);
+  display: flex;
+  justify-content: space-between;
+  /*primu element e in urma ultimul la sfirsit iar altele se pun intre ele intrun sir*/
+  background: #fff;
+  position: relative;
+  z-index: 1000;
+  /*elementul va fi deasupra elementelor cu z-index mai mic(aici nu trebuie) */
+
+}
+
+.navbar-telefon-index .container-telefon-index {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-telefon {
+  /*panelea de sus pentru sait*/
+  margin-top: 100px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 4px 100px rgba(0, 0, 0, .1);
+  display: flex;
+  justify-content: space-between;
+  /*primu element e in urma ultimul la sfirsit iar altele se pun intre ele intrun sir*/
+  background: #fff;
+  position: relative;
+  z-index: 1000;
+  /*elementul va fi deasupra elementelor cu z-index mai mic(aici nu trebuie) */
+
+
+}
+
+.navbar-telefon .container-telefon {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 70px;
+}
+
+.navbar-wrap-telefon {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 30px;
+
+}
+
+.navbar-brand-telefon {
+  font-weight: 300;
+  /*face textul gros*/
+  font-size: 25px;
+  /*face razmer texta in px care ii pun */
+  color: #000;
+  position: relative;
+  top: 40px;
+  margin-left: 40px;
+}
+
+.navbar-menu-info-telefon {
+  display: flex;
+  bottom: 30px;
+  position: relative;
+  margin-left: 130px;
+  list-style-type: none;
+}
+
+.navbar-menu-info-telefon li a {
+
+  margin-left: 50px;
+  display: flex;
+  color: #000;
+  position: relative;
+  bottom: 10px;
+}
+
+.textarea {
+  resize: none;
+}
+
+@media (min-width: 1900px) and (max-width: 2561px) {
+
+  .container {
+
+    max-width: 1073px;
   }
-  
-  .navbar-telefon-index .container-telefon-index {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+
+  .help__h2 {
+    margin-left: 338px;
+    font-size: 37px;
   }
-  
-  .navbar-telefon {
-    /*panelea de sus pentru sait*/
-    margin-top: 100px;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0px 4px 100px rgba(0, 0, 0, .1);
-    display: flex;
-    justify-content: space-between;
-    /*primu element e in urma ultimul la sfirsit iar altele se pun intre ele intrun sir*/
-    background: #fff;
-    position: relative;
-    z-index: 1000;
-    /*elementul va fi deasupra elementelor cu z-index mai mic(aici nu trebuie) */
-  
-  
+
+  .form-field input,
+  .form-field textarea {
+    width: 96%;
+    padding: 20px;
+    font-size: 17px;
   }
-  
-  .navbar-telefon .container-telefon {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-left: 70px;
+
+  .submit-btn {
+
+    margin-left: 43%;
+    font-size: 19px;
   }
-  
-  .navbar-wrap-telefon {
-    display: flex;
-    margin-top: 40px;
-    margin-left: 30px;
-  
+
+  .navbar {
+    height: 140px;
   }
-  
-  .navbar-brand-telefon {
-    font-weight: 300;
-    /*face textul gros*/
-    font-size: 25px;
-    /*face razmer texta in px care ii pun */
-    color: #000;
-    position: relative;
-    top: 40px;
-    margin-left: 40px;
+
+  .navbar-brand {
+    padding-left: 80px;
+    font-weight: 900;
+    font-size: 48px;
   }
-  
+
+  .navbar .container {
+    justify-content: flex-start;
+    margin-left: 100px;
+
+  }
+
+  .navbar-menu {
+    gap: 100px;
+    margin-left: 450px;
+  }
+
+  .navbar-menu-info {
+    gap: 100px;
+    margin-left: 450px;
+  }
+
   .navbar-menu-info-telefon {
+    gap: 40px;
+    margin-left: 100px;
+  }
+
+  body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 25px;
+    overflow-x: hidden;
+  }
+
+  .navbar-wrap-telefon {
+    margin-top: 26px;
+  }
+
+  .navbar-menu-info-telefon li a {
+    margin-left: 220px;
+  }
+
+}
+
+@media (min-width: 900px) and (max-width: 1024px) {
+
+
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Это предотвратит горизонтальную прокрутку */
+
+  }
+
+
+  .navbar-brand {
+    padding-left: 28px;
+    font-weight: 800;
+    font-size: 23px;
+  }
+
+  .navbar-menu {
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+    padding-right: 43px;
+  }
+
+  .navbar-menu li a {
+    font-size: 14px;
+    display: inline-block;
+    color: #000;
+    opacity: 0.6;
+    text-decoration: none;
+    padding: 0px;
+    transition: all .09s;
+
+
+  }
+
+  .navbar-wrap {
+    gap: 43px;
+  }
+
+
+  .novbar-home {
+    font-size: 14px;
+  }
+
+  .callback {
+    margin-left: 24px;
+    padding: 18px 21px;
+
+  }
+
+  .callback1 {
+
+    padding: 18px 21px;
+  }
+
+
+
+
+
+  .navbar-menu-info-telefon {
+    font-size: 13px;
     display: flex;
     bottom: 30px;
     position: relative;
-    margin-left: 130px;
+    margin-left: 8px;
     list-style-type: none;
   }
-  
-  .navbar-menu-info-telefon li a {
-  
-    margin-left: 50px;
-    display: flex;
+
+  .navbar-brand-telefon {
+    font-weight: 300;
+    font-size: 23px;
     color: #000;
     position: relative;
-    bottom: 10px;
+    top: 32px;
+    margin-left: -31px;
   }
-  .textarea{resize: none;}
+
+}
+
+@media (min-width: 560px) and (max-width: 768px) {
+
+  .navbar-telefon {
+
+    height: 28%;
+  }
+
+  .navbar-brand-telefon {
+    display: none;
+  }
+
+  .navbar-menu-info-telefon {
+    display: flex;
+    bottom: 9px;
+    position: relative;
+    margin-left: -145px;
+    list-style-type: none;
+    font-size: 12px;
+  }
+
+  .navbar-brand-telefon {
+    font-weight: 300;
+    font-size: 20px;
+    color: #000;
+    position: relative;
+    top: 22px;
+    margin-left: 270px;
+  }
+
+  
+  .navbar-menu li a {  
+    font-size: 14px;
+    display: inline-block;
+    color: #000;
+    opacity: 0.6;
+    text-decoration: none;
+    padding: 0px;
+    transition: all .09s
+  }
+
+  .navbar-brand {
+    padding-left: 12px;
+    font-weight: 800;
+    align-items: center;
+    font-size: 21px;
+    text-align: center;
+    padding-bottom: 5px;
+}.container {
+  max-width: 693px;}
+
+  
+  html,
+  body {
+   
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 13px;
+    /* Это предотвратит горизонтальную прокрутку */
+  }
+
+  .slider {
+
+    display: none;
+  }
+
+  .navbar-menu {
+    list-style-type: none;
+    padding-right: 28px;
+    font-size: 11px;
+
+    margin: 0;
+    display: flex;
+    gap: 0px;
+    align-items: center;
+  }
+
+
+  .navbar-wrap {
+
+    gap: 0px;
+  }
+  .help__h2 {
+    margin-left: 162px;
+    font-size: 32px;
+}
+  .callback {
+    font-size: 11px;
+    margin-left: 9px;
+    padding: 18px 30px; 
+    background-color: coral;
+    border-radius: 100px;
+    color: white;
+    text-decoration: none;
+  }
+  .navbar-menu {
+    list-style-type: none;
+    padding-right: 28px;
+    font-size: 11px;
+    margin: 0;
+    display: flex;
+    gap: 14px;
+    padding-left: 0px;
+    align-items: center;
+}
+}
+@media (min-width: 400px) and (max-width: 520px) {
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 13px;
+    /* Это предотвратит горизонтальную прокрутку */
+  }
+
+  .slider {
+
+    display: none;
+  }
+
+  .image-container img {
+    display: none;
+  }
+
+
+  .text-info {
+    font-weight: 100px;
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    left: -17px;
+    position: relative;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 461px;
+    display: flex;
+    background-color: #e9e9e9;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .text-info-a {
+    font-weight: 20px;
+    font-size: 12px;
+    position: absolute;
+    top: 150px;
+    left: -32px;
+    color: rgb(0, 0, 0);
+    width: 96%;
+    opacity: 0.8;
+    /* font-size: smaller; */
+  }
+
+  .text__info__perfect-my {
+    display: none;
+  }
+
+  .product-grid {
+
+    grid-template-columns: repeat(auto-fill, minmax(126px, 1fr));
+
+  }
+
+  .navbar-brand-telefon {
+    display: none;
+  }
+
+  .navbar-wrap-telefon {
+    grid-column: auto;
+    font-size: 10px;
+    display: grid;
+    margin-top: 40px;
+    margin-left: -282px;
+
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+.navbar{
+  display: none;
+
+}
+.navbar__phone{
+  display: flex;
+}
+.container {
+  max-width: 86%;
+  margin: auto;}
+  .help__h2 {
+    margin-left: 33px;
+    font-size: 26px;
+}
+}

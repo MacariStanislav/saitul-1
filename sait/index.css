@@ -12,10 +12,76 @@ body {
 
 }
 
+html,
+body {
+
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* Это предотвратит горизонтальную прокрутку */
+}
+
+.navbar__phone {
+  display: none;
+
+  background-color: rgb(0, 0, 0);
+
+  width: 100%;
+
+  height: 250px;
+  margin-bottom: 100px;
+}
+
+.navbar__phone__menu {
+  display: flex;
+
+}
+
+.navbar__phone__menu ul {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #000;
+  color: coral;
+  padding: 26px;
+  padding-top: 0px;
+  align-items: center;
+  list-style: none;
+  gap: 5px;
+  /* padding-left: 99px; */
+  margin-left: 61%;
+  flex-direction: column;
+  display: flex;
+
+
+}
+
+.navbar__phone__menu ul a {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #000;
+  color: coral;
+  padding: 10px;
+  list-style: none;
+  gap: 20px;
+  text-decoration: none;
+
+  flex-direction: column;
+  display: flex;
+
+}
+
+.navbar__help__phone {
+  margin-left: 5px;
+}
+
+
+
+
 .buy-button {
   color: rgb(0, 0, 0);
   border: 1px solid black;
   padding-left: 5px;
+  text-align: center;
   padding-right: 5px;
   background-color: coral;
 }
@@ -241,6 +307,24 @@ body {
   transform: scale(1.04);
   box-shadow: 0 9px 9px rgba(255, 127, 80, .5);
 }
+
+.callback1 {
+  margin-left: 30px;
+  padding: 20px 40px;
+
+  background-color: coral;
+  border-radius: 100px;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 10px 10px rgba(255, 127, 80, .2);
+  transition: all .1s ease-out;
+}
+
+.callback1:hover {
+  transform: scale(1.04);
+  box-shadow: 0 9px 9px rgba(255, 127, 80, .5);
+}
+
 
 .image-container {
   position: relative;
@@ -712,9 +796,15 @@ section {
   padding-top: 50px
 }
 
+
 .text__montain {
-  text-align: center;
+  padding-left: 680px;
   padding-top: 100px;
+}
+
+.text__montain-1 {
+  padding-left: 600px;
+
 }
 
 .text-services p {
@@ -813,7 +903,8 @@ section {
   color: #e60023;
 }
 
-@media (min-width: 1500px) and (max-width: 2561px) {
+@media (min-width: 1900px) and (max-width: 2561px) {
+
   .navbar {
     height: 140px;
   }
@@ -834,12 +925,14 @@ section {
     gap: 100px;
     margin-left: 450px;
   }
+
   .navbar-menu-info {
     gap: 100px;
     margin-left: 450px;
   }
+
   .navbar-menu-info-telefon {
-    gap:40px;
+    gap: 40px;
     margin-left: 100px;
   }
 
@@ -848,68 +941,737 @@ section {
     font-size: 25px;
     overflow-x: hidden;
   }
+
   .arrow-right-arrow {
     left: 96%;
   }
-  .text-overlay{
+
+  .text-overlay {
     left: 1139px;
   }
-  .text-overlay-2{
+
+  .text-overlay-2 {
     padding-left: 1139px;
   }
-  .text-overlay-1{
+
+  .text-overlay-1 {
     padding-left: 1139px;
   }
-  .image-container{
+
+  .image-container {
     margin-left: 533px;
 
     font-size: 19px;
   }
+
   .callback {
-    margin-left: 100px;}
-    .product-grid{
-      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-      gap: 61px;
-      margin: 37px;
-      margin-top: 112px;
-    }
-    .image__first{
-      width:100% ;
-      height: 400px;
-    }
-  .navbar-wrap-telefon{
+    margin-left: 100px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 61px;
+    margin: 37px;
+    margin-top: 112px;
+  }
+
+  .image__first {
+    width: 100%;
+    height: 400px;
+  }
+
+  .navbar-wrap-telefon {
     margin-top: 26px;
   }
-  .navbar-menu-info-telefon li a {
-    margin-left: 220px;}
-   
-    .about__my {
-      padding-left: 1031px;
-      font-size: 59px;}
 
-      .text {
-  
-        margin-left: 309px;
-        font-size: 29px;
-        width: 74%;
-      }    
-      .image-container-abaut img {
-        width: 730px;
-        margin-left: 270px;
-      }
-      .text-images {
-        font-size: 30px;
-        left: 730px;
-        margin-left: 224px;
-        
-        width: 72%;
-        height: 458px;
-       }
-       .product-services{
-        width: 27%;
+  .navbar-menu-info-telefon li a {
+    margin-left: 220px;
+  }
+
+  .about__my {
+    padding-left: 1031px;
+    font-size: 59px;
+  }
+
+  .text {
+
+    margin-left: 309px;
+    font-size: 29px;
+    width: 74%;
+  }
+
+  .image-container-abaut img {
+    width: 730px;
+    margin-left: 270px;
+  }
+
+  .text-images {
+    font-size: 30px;
+    left: 730px;
+    margin-left: 224px;
+
+    width: 72%;
+    height: 458px;
+  }
+
+
+  .product-services {
+    width: 38%;
     margin: 30px;
-    margin-left: 37%;
-       }
+    margin-left: 34%;
+    padding-bottom: 100px;
+
+  }
+
+  .text-images-img {
+    width: 919px;
+    height: auto;
+
+  }
+
+  .text-services {
+    padding-top: 8px;
+
+  }
+
+  .text-services p {
+    padding: 23px;
+    font-size: 23px;
+  }
+
+  element.style {
+    padding-top: 6px;
+  }
+
+  .text__montain {
+    padding-left: 1298px;
+  }
+
+  .text__montain-1 {
+    padding-left: 1166px;
+  }
+
+  .position {
+    margin-left: 47%;
+  }
+
+  html,
+  body {
+
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Это предотвратит горизонтальную прокрутку */
+  }
 
 }
 
+@media (min-width: 900px) and (max-width: 1024px) {
+
+
+  html,
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Это предотвратит горизонтальную прокрутку */
+
+  }
+
+
+  .navbar-brand {
+    padding-left: 28px;
+    font-weight: 800;
+    font-size: 23px;
+  }
+
+  .navbar-menu {
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar-menu li a {
+    font-size: 14px;
+    display: inline-block;
+    color: #000;
+    opacity: 0.6;
+    text-decoration: none;
+    padding: 0px;
+    transition: all .09s;
+
+
+  }
+
+  .navbar-wrap {
+    gap: 43px;
+  }
+
+  .navbar-menu-info {
+    gap: 24px;
+    align-items: center;
+  }
+
+  .navbar-menu-info li a {
+    font-size: 14px;
+    display: inline-block;
+    color: #000;
+    opacity: 0.6;
+    text-decoration: none;
+    padding: 0px;
+    transition: all .09s
+  }
+
+  .novbar-home {
+    font-size: 14px;
+  }
+
+  .callback {
+    margin-left: 24px;
+    padding: 18px 21px;
+
+  }
+
+  .callback1 {
+
+    padding: 18px 21px;
+  }
+
+  .image__first {
+    width: 100%;
+    height: 400px;
+  }
+
+  .text-overlay {
+    font-weight: 800;
+    font-size: 30px;
+    position: absolute;
+    top: 102px;
+    left: 387px;
+  }
+
+  .text-overlay-1 {
+    font-weight: 800;
+    font-size: 30px;
+    position: absolute;
+    top: 102px;
+    margin-right: 100px;
+    padding-left: 387px;
+  }
+
+  .text-overlay-2 {
+    font-weight: 800;
+    font-size: 30px;
+    position: absolute;
+    top: 102px;
+    margin-right: 100px;
+    padding-left: 387px;
+  }
+
+  .image-container img {
+    width: 600px;
+  }
+
+  .text-info {
+    font-weight: 100px;
+    font-size: 17px;
+    position: absolute;
+    top: 0px;
+    left: 609px;
+    color: rgb(0, 0, 0);
+    width: 56%;
+    height: 403px;
+    display: flex;
+    background-color: #e9e9e9;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .text__info__first {
+    padding-left: 12px;
+    margin-right: 7px;
+  }
+
+  .text-info-a {
+    font-weight: 20px;
+    font-size: 20px;
+    position: absolute;
+    top: 116px;
+    left: 581px;
+    color: rgb(0, 0, 0);
+    width: 60%;
+    opacity: 0.8;
+    font-size: 12px;
+  }
+
+
+
+
+  .navbar-menu-info-telefon {
+    font-size: 13px;
+    display: flex;
+    bottom: 30px;
+    position: relative;
+    margin-left: 8px;
+    list-style-type: none;
+  }
+
+  .navbar-brand-telefon {
+    font-weight: 300;
+    font-size: 23px;
+    color: #000;
+    position: relative;
+    top: 32px;
+    margin-left: -31px;
+  }
+
+  .about__my {
+    padding-left: 36%;
+  }
+
+  .image-container-abaut img {
+
+    width: 495px;
+    height: auto;
+  }
+
+  .text-images {
+    font-size: 18px;
+    left: 495px;
+    padding-left: 31px;
+    background-color: #ebebeb;
+    width: 70%;
+    height: 300px;
+
+  }
+
+  .text__montain-1 {
+    padding-left: 365px;
+  }
+
+  .text-images-img {
+    display: flex;
+    padding-left: 0px;
+    box-shadow: 10px 10px 10px rgb(0 0 0);
+    margin: 0;
+    width: 420px;
+    height: 234px;
+  }
+
+  .text-services {
+
+    font-size: 15px;
+    margin-right: 63px;
+
+    padding-top: 22px;
+  }
+
+  .product-services {
+
+    height: 350px;
+  }
+
+  .text__montain {
+    padding-left: 460px;
+    padding-top: 100px;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 768px) {
+
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 13px;
+    /* Это предотвратит горизонтальную прокрутку */
+  }
+
+  .slider {
+
+    display: none;
+  }
+
+  .navbar-menu {
+    list-style-type: none;
+    padding-right: 28px;
+    font-size: 11px;
+
+    margin: 0;
+    display: flex;
+    gap: 0px;
+    align-items: center;
+  }
+
+
+  .navbar-wrap {
+
+    gap: 0px;
+  }
+
+  .callback {
+    font-size: 11px;
+    margin-left: 11px;
+    padding: 10px 30px;
+    background-color: coral;
+    border-radius: 100px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .image-container img {
+    display: block;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-left: -16px;
+  }
+
+  .image-container img {
+    display: block;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-left: -40px;
+    width: 407px;
+  }
+
+  .text-info-a {
+    font-weight: 20px;
+    font-size: 8px;
+    position: absolute;
+    top: 87px;
+    font-size: 9px;
+    left: 334px;
+    color: rgb(0, 0, 0);
+    width: 90%;
+    opacity: 0.8;
+    /* font-size: smaller; */
+  }
+
+  .navbar-telefon {
+
+    height: 28%;
+  }
+
+  .navbar-brand-telefon {
+    font-weight: 300;
+    font-size: 20px;
+    color: #000;
+    position: relative;
+    top: 36px;
+    margin-left: -5px;
+  }
+
+  .navbar-menu-info-telefon {
+    display: flex;
+    bottom: 9px;
+    position: relative;
+    margin-left: -145px;
+    list-style-type: none;
+    font-size: 12px;
+  }
+
+  .navbar-brand-telefon {
+    font-weight: 300;
+    font-size: 20px;
+    color: #000;
+    position: relative;
+    top: 22px;
+    margin-left: 270px;
+  }
+
+  .navbar-menu-info {
+    padding: 0px;
+    font-size: 10px;
+    list-style-type: none;
+    padding-right: 4px;
+    margin: 0;
+    display: flex;
+    gap: 0px;
+  }
+
+  .navbar-brand {
+    padding-left: 14px;
+    font-weight: 800;
+    font-size: 21px;
+  }
+
+  .callback {
+    font-size: 11px;
+    margin-left: 11px;
+    padding: 12px 21px;
+  }
+
+  .about__my {
+    padding-left: 250px;
+  }
+
+  .image-container-abaut img {
+    display: block;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 426px;
+    height: auto;
+  }
+
+  .text-images {
+    font-weight: 20px;
+    font-size: 15px;
+    position: absolute;
+    top: 0;
+    left: 426px;
+    color: rgb(0, 0, 0);
+    padding-left: 30px;
+    background-color: #ebebeb;
+    width: 66%;
+    height: 255px;
+    display: flex;
+    margin: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    padding-top: 30px;
+    padding-right: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+  .image-container-abaut {
+    position: relative;
+    display: inline-block;
+    margin-left: 6px;
+  }
+
+  .product-services {
+    background-color: #333;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    height: 438px;
+    width: 76%;
+    margin: 30px;
+    margin-left: 10%;
+    box-shadow: 10px 2px 10px;
+    color: #000;
+  }
+
+  .text__montain-1 {
+    padding-left: 277px;
+  }
+
+  .text__montain {
+    padding-left: 331px;
+    padding-top: 100px;
+  }
+
+  .position {
+    margin-left: 37%;
+  }
+
+  .text-images-img {
+    display: flex;
+    padding-left: 0px;
+    box-shadow: 10px 10px 10px rgb(0 0 0);
+    margin: 0;
+    width: 535px;
+    height: 285px;
+  }
+
+  .text-services {
+    text-decoration: none;
+    padding-top: 26px;
+    font-weight: 30px;
+    font-size: 23px;
+    color: #ffffff;
+    align-items: center;
+    padding-top: 15px;
+  }
+
+  .text {
+
+    margin-left: 100px;
+  }
+
+
+  .text-info {
+    font-weight: 100px;
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    left: 367px;
+    color: rgb(0, 0, 0);
+    width: 84%;
+    height: 273px;
+    display: flex;
+    background-color: #e9e9e9;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .text__info__first {
+    padding-left: 7px;
+    margin-right: 8px;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 520px) {
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 13px;
+    /* Это предотвратит горизонтальную прокрутку */
+  }
+
+  .slider {
+
+    display: none;
+  }
+
+  .image-container img {
+    display: none;
+  }
+
+
+  .text-info {
+    font-weight: 100px;
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    left: -17px;
+    position: relative;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 461px;
+    display: flex;
+    background-color: #e9e9e9;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .text-info-a {
+    font-weight: 20px;
+    font-size: 12px;
+    position: absolute;
+    top: 150px;
+    left: -32px;
+    color: rgb(0, 0, 0);
+    width: 96%;
+    opacity: 0.8;
+    /* font-size: smaller; */
+  }
+
+  .text__info__perfect-my {
+    display: none;
+  }
+
+  .product-grid {
+
+    grid-template-columns: repeat(auto-fill, minmax(126px, 1fr));
+
+  }
+
+  .navbar-brand-telefon {
+    display: none;
+  }
+
+  .navbar-wrap-telefon {
+    grid-column: auto;
+    font-size: 10px;
+    display: grid;
+    margin-top: 40px;
+    margin-left: -282px;
+
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+
+  .navbar {
+    display: none;
+
+  }
+
+  .navbar__phone {
+    display: flex;
+  }
+
+  .about__my {
+    padding-left: 85px;
+  }
+
+  .text {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    margin-left: 29px;
+    margin-bottom: 90px;
+    font-size: 17px;
+    padding: 10px;
+    width: 86%;
+  }
+
+
+
+  .image-container-abaut img {
+    display: none;
+  }
+
+  .text-images {
+    display: none;
+  }
+
+  .product-services {
+    background-color: #333;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    height: 404px;
+    width: 100%;
+    margin: 27px;
+    margin-left: 0%;
+    box-shadow: 10px 2px 10px;
+    color: #000;
+  }
+
+  .text-images-img {
+    display: flex;
+    padding-left: 0px;
+    box-shadow: 10px 10px 10px rgb(0 0 0);
+    margin: 0;
+    width: 390px;
+    height: 250px;
+  }
+
+  .text-services {
+    width: 398px;
+    text-decoration: none;
+    padding-top: 30px;
+    font-weight: 30px;
+    font-size: 17px;
+    color: #ffffff;
+    align-items: center;
+    padding-top: 25px;
+  }
+  .text__montain-1 {
+    padding-left: 116px;
+}
+.text__montain {
+  padding-left: 180px;
+  padding-top: 100px;
+}.position {
+  margin-left: 20%;
+  font-size: 30px;
+  border: 1px solid black;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 10px;
+}
+}
