@@ -6,14 +6,15 @@
   display: flex;
   gap: 20px;
 }
+
 .navbar__phone {
   display: none;
 
   background-color: rgb(0, 0, 0);
- 
+
   width: 100%;
 
-  height: 250px;
+  height: 300px;
   margin-bottom: 100px;
 }
 
@@ -36,9 +37,10 @@
   margin-left: 61%;
   flex-direction: column;
   display: flex;
-  
- 
+
+
 }
+
 .navbar__phone__menu ul a {
   border: 1px solid black;
   border-radius: 20px;
@@ -48,14 +50,16 @@
   list-style: none;
   gap: 20px;
   text-decoration: none;
- 
+
   flex-direction: column;
-  display: flex; 
+  display: flex;
 
 }
-.navbar__help__phone{
+
+.navbar__help__phone {
   margin-left: 5px;
 }
+
 .navbar-menu-info li a {
   display: inline-block;
   color: #000;
@@ -511,8 +515,8 @@ body {
     margin-left: 270px;
   }
 
-  
-  .navbar-menu li a {  
+
+  .navbar-menu li a {
     font-size: 14px;
     display: inline-block;
     color: #000;
@@ -529,13 +533,16 @@ body {
     font-size: 21px;
     text-align: center;
     padding-bottom: 5px;
-}.container {
-  max-width: 693px;}
+  }
 
-  
+  .container {
+    max-width: 693px;
+  }
+
+
   html,
   body {
-   
+
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -564,19 +571,22 @@ body {
 
     gap: 0px;
   }
+
   .help__h2 {
     margin-left: 162px;
     font-size: 32px;
-}
+  }
+
   .callback {
     font-size: 11px;
     margin-left: 9px;
-    padding: 18px 30px; 
+    padding: 18px 30px;
     background-color: coral;
     border-radius: 100px;
     color: white;
     text-decoration: none;
   }
+
   .navbar-menu {
     list-style-type: none;
     padding-right: 28px;
@@ -586,8 +596,9 @@ body {
     gap: 14px;
     padding-left: 0px;
     align-items: center;
+  }
 }
-}
+
 @media (min-width: 400px) and (max-width: 520px) {
 
   html,
@@ -663,18 +674,23 @@ body {
   .navbar-brand {
     display: none;
   }
-.navbar{
-  display: none;
 
-}
-.navbar__phone{
-  display: flex;
-}
-.container {
-  max-width: 86%;
-  margin: auto;}
+  .navbar {
+    display: none;
+
+  }
+
+  .navbar__phone {
+    display: flex;
+  }
+
+  .container {
+    max-width: 86%;
+    margin: auto;
+  }
+
   .help__h2 {
     margin-left: 33px;
     font-size: 26px;
-}
+  }
 }

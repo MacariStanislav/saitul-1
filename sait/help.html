@@ -11,7 +11,7 @@
 <script>
     function toggleAnswer(event) {//Это объявление функции с именем toggleAnswer, которая принимает один аргумент — event. Этот аргумент представляет собой объект события, который содержит информацию о событии, вызвавшем функцию (например, клик мыши).
         const answer = event.target.nextElementSibling;//event.target — это элемент, на который пользователь кликнул (в данном случае заголовок вопроса).nextElementSibling — это свойство, которое возвращает следующий соседний элемент (в DOM-структуре) после event.target. Обычно это будет элемент, содержащий ответ на вопрос.Таким образом, эта строка сохраняет в переменной answer ссылку на следующий элемент после заголовка (например, блок с ответом).
-        
+
         answer.style.display = answer.style.display === "block" ? "none" : "block";//Здесь происходит переключение видимости ответа.answer.style.display — обращение к свойству display CSS у элемента answer.Условие answer.style.display === "block" проверяет, установлен ли стиль display в "block" (что означает, что элемент видим).Если элемент видим (display === "block"), то он скрывается ("none"). Если он скрыт, то он отображается ("block").Оператор ? : — это тернарный оператор, который позволяет выполнять условное выражение в одной строке.
     }
 </script>
@@ -36,16 +36,17 @@
         </nav>
         <nav class="navbar__phone">
             <div class="navbar__phone__menu">
-              <ul >
-                <li><a href="about-us.html">О нас</a></li>
-                <li><a href="services.html">Услуги</a></li>
-                <li><a href="telefon.html">Контакты</a></li>
-                <li><a href="colaboration.html">Коллаборация</a></li>
-                <li> <a href="help.html" class="navbar__help__phone">Техническая поддержка</a></li>
-              </ul>
-              
+                <ul>
+                    <li><a href="about-us.html">О нас</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="telefon.html">Контакты</a></li>
+                    <li><a href="colaboration.html">Коллаборация</a></li>
+                    <li> <a href="index.html" class="navbar__house__mini">Основная странича</a></li>
+                    <li> <a href="help.html" class="navbar__help__phone">Техническая поддержка</a></li>
+                </ul>
+
             </div>
-          </nav>
+        </nav>
         <br>
     </header>
     <main>
